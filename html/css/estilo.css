@@ -1,0 +1,65 @@
+/*
+selector abre yaves 
+
+*/
+@font-face {
+    font-family: sunshine;
+    src: url("fuente/MrSunshine.otf");
+
+}
+
+h1{
+    font-family: sunshine;
+    font-size: 50px;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li {
+    color: #080606;
+    margin : 0px;
+    padding : 0px;
+}
+
+header,
+main,
+footer {
+    /*border: 1px solid black;*/
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: rgb(250, 250, 250);
+    padding: 30px;
+}
+
+body {
+    background: #DCDCDC;
+}
+
+#descarga{
+    float: left;
+    margin: right 20px;
+}
+
+/*trabajar menu*/
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit; /*rl color que pondria por defecto si no usara estilos*/
+
+}
+nav ul li{
+    padding: 20px;
+    margin: 0px;
+    list-style-type: none;
+    float: left;
+    background: #080606;
+    color:#DCDCDC;
+    text-transform: uppercase;
+    width: 100px;
+    font-size: 13px;
+    transition: 1s;
+
+}
+.clearfix{
+    clear:both;
+
+}

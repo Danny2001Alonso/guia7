@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+    <link rel="Stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Trucos para trabajar con HTML en Visual Studio Code</h2>
+      <h2>Construir esqueleto HTML escribiendo un solo carácter</h2>
+      <p>Para ello tan solo será necesario escribir el siguiente carácter: !</p>
+      <center><img src="./imagenes/xd.png" style="width: 450px" /></center>
+      <p>
+        Veremos que se nos escribirá el esqueleto HTML de forma automática. Tan
+        solo debemos modificar los valores que veamos oportunos para adaptar
+        nuestro código a lo que queremos.
+      </p>
+    </header>
+    <main>
+      <h2>Introducir una etiqueta dentro de otra</h2>
+      <p>
+        Hay una forma muy útil para poder escribir varias etiquetas e
+        introducirlas una dentro de otra. El formato es el siguiente:
+        etiqueta>etiqueta2 Tan solo hay que reemplazar etiqueta por una etiqueta
+        y reemplazar la etiqueta etiqueta2 por la etiqueta a meter dentro de la
+        primera etiqueta. Es decir, si queremos crear una etiqueta section y
+        meter dentro de ella otra etiqueta llamada article, deberíamos escribir:
+        section>article Si queremos ir más allá y queremos meter un div dentro
+        de la etiqueta section y dentro de ese div un a, deberíamos escribir:
+        section>article>div>a Y, seguidamente, después de escribir la última
+        etiqueta, presionar la tecla tab.
+      </p>
+      <center>
+        <img src="./imagenes/section article div a.png" style="width: 250px" />
+      </center>
+      <h2>Introducir atributos HTML más rápido</h2>
+      <p>
+        Si queremos escribir atributos de una forma mucho más rápida podemos
+        hacerlo de la siguiente manera: etiqueta[atributo=valor] Tan solo hay
+        que reemplazar etiqueta por la etiqueta, atributo, por el atributo y
+        valor por el valor que se le va a dar al atributo. Si queremos agregar
+        más de un atributo a una etiqueta podemos hacerlo abriendo otros
+        corchetes seguidos de los anteriores:
+        etiqueta[atributo=valor][atributo2=valor] Por ejemplo, si queremos crear
+        una etiqueta a que tenga el atributo href con el valor #page2.html, la
+        etiqueta id con el valor page2, y la etiqueta name con el valor page,
+        podríamos escribir: a[href=#page2.html][id=page2][name=page] Y,
+        seguidamente, después de escribir el último cierre de corchete,
+        presionar la tecla tab.
+      </p>
+      <center><img src="./imagenes/a.png" style="width: 450px" /></center>
+      <h2>Escribir dentro de una etiqueta</h2>
+      <p>
+        Podemos escribir de forma rápida dentro de una etiqueta utilizando {}.
+        etiqueta{texto} Tan solo hay que reemplazar etiqueta por la etiqueta y
+        texto, por el texto que queremos agregar dentro de la etiqueta. Si
+        queremos agregar el texto 'clic aquí' dentro de la etiqueta a, debemos
+        poner: a{clic aquí} Y, seguidamente, presionar la tecla tab.
+      </p>
+      <center>
+        <img src="./imagenes/resultado a clic aquí.png" style="width: 350px" />
+      </center>
+      <h2>Crear varias etiquetas repetidas</h2>
+      <p>
+        Si queremos crear varias etiquetas repetidas, podemos utilizar el
+        operador * seguido del número que indicará la cantidad de repeticiones.
+        etiqueta*n Tan solo hay que reemplazar etiqueta por la etiqueta y n, por
+        la cantidad de repeticiones. Si queremos crear 5 etiquetas a, debemos
+        poner: a*5 Y presionar la tecla tab.
+      </p>
+      <center>
+        <img src="./imagenes/5 a.png" style="width: 150px" />
+      </center>
+      <h2>Escribir una iteración numérica</h2>
+      <p>
+        Si queremos escribir una iteración numérica, debemos utilizar el símbolo
+        $ seguido del número que indicará la cantidad de iteraciones. Si
+        queremos crear 5 etiquetas p, y que cada una de ellas tenga una clase
+        diferente, enumerada del 1 al 5, debemos poner: p.clase$*5 Como vimos,
+        el dólar hará que por cada iteración se sume 1 al número a introducir y
+        el operador * lo que hará será crear la cantidad de p especificadas. El
+        resultado es el siguiente:
+      </p>
+      <center>
+        <img src="./imagenes/5p.png" style="width: 150px" />
+      </center>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="informacion.html">informacion</a></li>
+          <li><a href="trucos.html">trucos</a></li>
+          <li><a href="usabilidad.html">usabilidad</a></li>
+        </ul>
+      </nav>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
